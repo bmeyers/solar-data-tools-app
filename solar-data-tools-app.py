@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.1.46"
+__generated_with = "0.1.47"
 app = marimo.App(layout_file="layouts/solar-data-tools-app.grid.json")
 
 
@@ -114,13 +114,6 @@ def __():
     # custom_cache[data_file.value[0].name] = data_file.value[0].contents
     # current_key = data_file.value[0].name
     return
-
-
-@app.cell
-def __(dh, plt):
-    fig_save = dh.plot_heatmap('filled')
-    plt.savefig('heatmap2.pdf')
-    return fig_save,
 
 
 @app.cell
