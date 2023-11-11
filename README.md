@@ -4,7 +4,7 @@ Marimo application for using Solar Data Tools
 ## Installation instructions
 
 1. Clone repository
-3. Create a fresh Pthyon 3.10 virtual environment, e.g.,
+3. Create a fresh Python 3.10 virtual environment, e.g.,
 ```
 conda create -n sdt-app python-3.10
 conda activate sdt-app
