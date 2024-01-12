@@ -4,16 +4,15 @@ Marimo application for using Solar Data Tools
 ## Installation instructions
 
 1. Clone repository
-3. Create a fresh Python 3.10 virtual environment, e.g.,
+3. Create a fresh Python virtual environment, e.g.,
 ```
-conda create -n sdt-app python=3.10
+conda create -n sdt-app pip
 conda activate sdt-app
 ```
 4. Install the packages in `requirements.txt`, e.g.,
 ```
 pip install -r requirements.txt
 ```
-5. Move/copy the file `cassandra_cluster` to the `~/.aws` directory on your machine
 
 ## Run app
 ```
@@ -22,8 +21,8 @@ marimo run solar-data-tools-app.py
 
 ## Data access
 
-Some csv files are avaible to use with the file loader in `system-data/` directory. Additionally, with the Cassandara cluster configured correctly and an internet connection, you can use the drop down menus to access data from the database.
+The data are provided through the SETO [Solar Data Bounty Prize](https://www.herox.com/solardatabounty/update/6264). This applicaton automatically loads power generation data from site 2107 in the [OEDI S3 bucket](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pvdaq%2F2023-solar-data-prize%2F), and it will save a local copy in your working directory. Future use of the application does not require an internet connection.
 
-## Data confidentiality
+## How to use application
 
-The data in the CSV files and the Cassandra database should be considered private and should not be retained beyond the testing of this app nor copied to any 3rd parties. Please reach out if you have any questions regarding handling of the data.
+
