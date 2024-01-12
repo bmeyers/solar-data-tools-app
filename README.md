@@ -25,6 +25,8 @@ The data are provided through the SETO [Solar Data Bounty Prize](https://www.her
 
 ## How to use application
 
+We provide a point-and-click user interface for Solar Data Tools Python software. 
+
 1. Select an inverter source from the drop down menu in the upper left
 2. The analysis of each power signal takes ~30 seconds, but the results are cached
 3. After analysis is complete there are 5 tabs to explore: data viewer, losses, daily data quality, capacity changes, and clipping analysis
