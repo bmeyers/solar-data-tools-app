@@ -1,3 +1,2 @@
 solar-data-tools
 marimo
-cassandra-driver

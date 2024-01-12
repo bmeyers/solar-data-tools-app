@@ -3,68 +3,78 @@
   "data": {
     "columns": 14,
     "rowHeight": 41,
-    "maxWidth": 1500,
+    "maxWidth": 1400,
     "cells": [
       {
-        "position": null
-      },
-      {
-        "position": null
-      },
-      {
-        "position": null
-      },
-      {
-        "position": null
-      },
-      {
         "position": [
           0,
           0,
-          5,
-          5
+          3,
+          2
         ]
       },
       {
         "position": [
           0,
-          5,
-          5,
+          2,
+          3,
           7
-        ],
-        "scrollable": true
+        ]
       },
       {
         "position": [
-          0,
-          12,
-          5,
-          7
-        ],
-        "scrollable": true
-      },
-      {
-        "position": null
-      },
-      {
-        "position": null
-      },
-      {
-        "position": null
-      },
-      {
-        "position": null
-      },
-      {
-        "position": null
-      },
-      {
-        "position": [
-          5,
           0,
           9,
-          34
+          3,
+          6
         ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": [
+          3,
+          0,
+          10,
+          23
+        ]
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
+      },
+      {
+        "position": null
       },
       {
         "position": null
