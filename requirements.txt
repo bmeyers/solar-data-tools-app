@@ -1,2 +1,3 @@
 solar-data-tools
 marimo
+git+https://github.com/cvxgrp/spcqe.git
