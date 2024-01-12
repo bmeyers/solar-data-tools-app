@@ -31,3 +31,7 @@ The data are provided through the SETO [Solar Data Bounty Prize](https://www.her
 
 The image below shows a view of the "losses" tab:
 ![result(9)](https://github.com/bmeyers/solar-data-tools-app/assets/1463184/42dd302f-6ba6-46c0-94ca-f66379370032)
+
+### Acknowledgement
+
+This material is based upon work supported by the U.S. Department of Energy's Office of Energy Efficiency and Renewable Energy (EERE) under the Solar Energy Technologies Office Award Number 38529.
