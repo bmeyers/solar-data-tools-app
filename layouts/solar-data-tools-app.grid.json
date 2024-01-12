@@ -3,6 +3,7 @@
   "data": {
     "columns": 14,
     "rowHeight": 41,
+    "maxWidth": 1500,
     "cells": [
       {
         "position": null
@@ -19,26 +20,28 @@
       {
         "position": [
           0,
-          11,
+          0,
+          5,
+          5
+        ]
+      },
+      {
+        "position": [
+          0,
+          5,
           5,
           7
-        ]
+        ],
+        "scrollable": true
       },
       {
         "position": [
           0,
-          4,
+          12,
           5,
           7
-        ]
-      },
-      {
-        "position": [
-          0,
-          0,
-          5,
-          4
-        ]
+        ],
+        "scrollable": true
       },
       {
         "position": null
@@ -59,8 +62,8 @@
         "position": [
           5,
           0,
-          8,
-          25
+          9,
+          34
         ]
       },
       {

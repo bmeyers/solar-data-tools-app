@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.1.47"
+__generated_with = "0.1.50"
 app = marimo.App(layout_file="layouts/solar-data-tools-app.grid.json")
 
 
@@ -46,9 +46,8 @@ def __(data_source, mo, system_picker):
 
 
 @app.cell
-def __(dh, mo):
-    with mo.redirect_stdout():
-        dh.report()
+def __(data_picker):
+    data_picker
     return
 
 
@@ -73,14 +72,18 @@ def __(
     elif data_source.selected_key == "DB access":
         if system_picker.value is not None:
             dh, _output = process_file2(text_source.value, system_picker.value)
-    plaintext(_output)
+    plaintext(_output).center()
     return current_key, dh
 
 
 @app.cell
-def __(data_picker):
-    data_picker
-    return
+def __(dh, mo, plaintext):
+    with mo.capture_stdout() as buffer:
+        dh.report()
+    plaintext(buffer.getvalue()).center()
+    # with mo.redirect_stdout():
+        # dh.report()
+    return buffer,
 
 
 @app.cell
