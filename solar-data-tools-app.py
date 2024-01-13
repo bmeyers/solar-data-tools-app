@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.1.73"
+__generated_with = "0.1.76"
 app = marimo.App(layout_file="layouts/solar-data-tools-app.grid.json")
 
 
@@ -153,8 +153,8 @@ def __():
     import marimo as mo
     import matplotlib.pyplot as plt
 
-    plt.rcParams["figure.dpi"] = 300
-    plt.rcParams["savefig.dpi"] = 300
+    # plt.rcParams["figure.dpi"] = 300
+    # plt.rcParams["savefig.dpi"] = 300
     import numpy as np
     import pandas as pd
     import boto3
@@ -289,6 +289,7 @@ def __(np, pd):
 
         # Get an offset so labels don't sit right on top of the bar
         max = trans.max()
+        max = max.iloc[0]
         neg_offset = max / 25
         pos_offset = max / 50
         plot_offset = int(max / 15)
@@ -298,9 +299,9 @@ def __(np, pd):
         for index, row in trans.iterrows():
             # For the last item in the list, we don't want to double count
             if row["amount"] == total:
-                y = y_height[loop]
+                y = y_height.iloc[loop]
             else:
-                y = y_height[loop] + row["amount"]
+                y = y_height.iloc[loop] + row["amount"]
             # Determine if we want a neg or pos offset
             if row["amount"] > 0:
                 y += pos_offset
@@ -510,7 +511,7 @@ def __(
             self.outage_percent = None
 
         def estimate_losses(self, solver="CLARABEL"):
-            self.problem.decompose(solver=solver)
+            self.problem.decompose(solver=solver, verbose=False)
             # in the SD formulation, we put the residual term first, so it's the reverse order of how we specify this model (weather last)
             self.log_energy_model = self.problem.decomposition[::-1]
             self.energy_model = np.exp(self.log_energy_model)
