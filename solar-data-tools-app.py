@@ -152,9 +152,8 @@ def __(capacity, clipping, daily, heatmaps, losses, mo):
 def __():
     import marimo as mo
     import matplotlib.pyplot as plt
-
-    # plt.rcParams["figure.dpi"] = 300
-    # plt.rcParams["savefig.dpi"] = 300
+    plt.rcParams["figure.dpi"] = 300
+    plt.rcParams["savefig.dpi"] = 300
     import numpy as np
     import pandas as pd
     import boto3
