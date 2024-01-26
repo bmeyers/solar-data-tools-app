@@ -4,7 +4,7 @@
 ## Installation instructions
 
 1. Clone repository
-3. Create a fresh Python virtual environment, e.g.,
+3. Create a fresh Python virtual environment, e.g. using [conda](https://conda.io/),
 ```
 conda create -n sdt-app pip
 conda activate sdt-app
