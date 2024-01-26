@@ -1,5 +1,5 @@
 # solar-data-tools-app
-[Marimo](https://marimo.io) application for using Solar Data Tools
+[Marimo](https://marimo.io) application for using [Solar Data Tools](https://github.com/slacgismo/solar-data-tools)
 
 ## Installation instructions
 
