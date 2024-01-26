@@ -9,7 +9,7 @@
 conda create -n sdt-app pip
 conda activate sdt-app
 ```
-4. Install the packages in `requirements.txt`, e.g.,
+4. Install the packages in `requirements.txt`, e.g. using [pip](https://pip.pypa.io/en/stable/),
 ```
 pip install -r requirements.txt
 ```
