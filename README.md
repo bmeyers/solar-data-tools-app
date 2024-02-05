@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Run app
 ```
-marimo run solar-data-tools-app.py
+marimo run app.py
 ```
 
 ## Data access

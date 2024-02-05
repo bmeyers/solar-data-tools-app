@@ -1,7 +1,7 @@
 import marimo
 
-__generated_with = "0.1.76"
-app = marimo.App(layout_file="layouts/solar-data-tools-app.grid.json")
+__generated_with = "0.1.81"
+app = marimo.App(layout_file="layouts/app.grid.json")
 
 
 @app.cell
@@ -152,6 +152,7 @@ def __(capacity, clipping, daily, heatmaps, losses, mo):
 def __():
     import marimo as mo
     import matplotlib.pyplot as plt
+
     plt.rcParams["figure.dpi"] = 300
     plt.rcParams["savefig.dpi"] = 300
     import numpy as np
@@ -243,7 +244,7 @@ def __(boto3, os, pd):
 @app.cell
 def __(load_data):
     DF = load_data(
-        "2107_electrical_data.csv",
+        "inputs/2107_electrical_data.csv",
         "oedi-data-lake",
         "pvdaq/2023-solar-data-prize/2107_OEDI/data/2107_electrical_data.csv",
     )
